@@ -9,20 +9,50 @@
 <body>
   
         <nav class="navbar">
+            
             <div class="logo">
         <h2>wadi<b>cafe</b></h2>
       </div>
+
             <ul>
+                <li> <button id="butn" class="butsh"><img class="basketsh" src="shopping_cart_svgrepo_com.svg" alt="basket"></button></li>
                 <li> <a href="home.html">Home</a></li>
-                <li><a href="menu.html"> menu</a></li>
+                
                 <li><a href="cont.html">contact</a></li>
             </ul>
         </nav>
+        <div id="last" class="con-baske">
+           
+        <ul id="ull">
+
+
+
+        </ul>
+        
+    <input type="button" value="اجمالي السعر" id="totalp">
+      <p id="prs"></p>
+      <input type="button" value="تاكيد الطلب" id="masj">
+      </div>
+      <div class="form" id="form1">
+
+<div class="logo">
+        <h2>wadi<b>cafe</b></h2>
+      </div>
+
+
+       <form >
+        <input class="inp" type="text" id="form-n" placeholder="اسم المستلم" required minlength="2">
+        <input class="inp" type="text" id="form-n1" placeholder="ملاحضه على الخدمه">
+        <input type="submit" id="buttonf" value="ارسال الطلب">
+        <input class="but" type="submit" id="buttont" value="تراجع">
+       </form>
+      </div> 
+        
         <div class="prg"><p>Welcome to <strong> Wadi <b>cafe</b></strong><br>
         Brewed Fresh,Served Warm.
 </p>
 
- <img class="cup1" src="icons8-coffee-48.png" alt="cup">
+
 </div>
     </header>
     <main>
@@ -35,39 +65,49 @@
          <div class=" product-img"> <img src="icons8-cappuccino-64.png" alt="Cappuccino"></div>
          <div class="product-price"> 4 LYD</div>
          <div class="product-name"> Cappuccino</div>
+         <input data-add="false"  class="basket" type="button" value="اضافه الى السله" price="4" title="Cappuccino">
+
         </div>
 
         <div class="card">
          <div class=" product-img"> <img src="icons8-coffee-to-go-64.png" alt="Nescafe"></div>
          <div class="product-price"> 3.5 LYD</div>
          <div class="product-name">Nescafe</div>
+            <input data-add="false" class="basket" type="button" value="اضافه الى السله" price="3.5" title="Nescafe">
         </div>
 
         <div class="card">
          <div class=" product-img"> <img src="icons8-tea-cup-64.png" alt="tea"></div>
          <div class="product-price">1 LYD</div>
          <div class="product-name">Tea</div>
+              <input  data-add="false" class="basket" type="button" value="اضافه الى السله" price="1" title="Tea">
         </div>
 
         <div class="card">
          <div class=" product-img"> <img src="icons8-coffee-cup-64.png" alt="Arabic coffee"></div>
          <div class="product-price"> 3 LYD</div>
          <div class="product-name">Arabic coffee</div>
+              <input data-add="false" class="basket" type="button" value="اضافه الى السله" price="3" title="Arabic coffee">
         </div>
 
         <div class="card">
          <div class=" product-img"> <img src="icons8-coffee-32.png" alt="crema"></div>
          <div class="product-price">3 LYD</div>
          <div class="product-name">crema</div>
+              <input data-add="false" class="basket" type="button" value="اضافه الى السله" price="3" title="crema">
         </div>
 
          <div class="card">
          <div class=" product-img"> <img src="icons8-bottle-of-water-50.png" alt="water"></div>
          <div class="product-price">1 LYD</div>
          <div class="product-name">Water</div>
+              <input data-add="false" class="basket" type="button" value="اضافه الى السله" price="1" title="water">
         </div>
 
         </div>
+
+
+     
       </section> 
         <h1 class="proj">contact <b>me</b></h1>
     <footer id="contact" class="footer-container">
@@ -106,6 +146,6 @@
     <p>All Rights Reserved &copy; 2026 Wadi Cafe</p>
    </footer>
     </main>
-  
+  <script src="cof.js"></script>
 </body>
 </html>
