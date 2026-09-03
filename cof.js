@@ -66,9 +66,13 @@ mas.onclick=function(){
 butend.onclick=function(){
      updetData()
     let itmslest=""
+    
     let lielment=ul.getElementsByTagName('li')
     for(let i=0; i<lielment.length;i++){
-        itmslest+="-"+lielment[i].innerText+"\n"
+        let templi=lielment[i].cloneNode(true)
+        let btn=templi.querySelector('button')
+        if(btn) btn.remove()
+        itmslest+="-"+templi.innerText.trim()+"\n"
     }
     let totalprice=prs.innerText
     let costomarname=formn.value
@@ -77,6 +81,8 @@ butend.onclick=function(){
         formn.focus()
         return
     }
+    
+    
     let notes=formm.value
     let phonenumber="218924596858"
     let massage="طلب جديد:\n\n"+"الطلبات:\n"+itmslest+"\n"+"الاجمالي:"+totalprice+"\n"+"اسم المستلم:"+costomarname+"\n"+"الملاحضات:"+notes
